@@ -18,45 +18,41 @@
  
     <div id="x_win"> <i class="fa fa-times" aria-hidden="true"> </i> <div id="xx"> wins </div></div>
    <div id="o_win"> <i class="fa fa-circle-o" aria-hidden="true"></i><div id="ooo"> wins </div> </div>
-   <div id="draws"> <i class="fa fa-balance-scale" aria-hidden="true"></i> <div id="draw"> draws</div></div>
+   <div id="draws"> <i class="fa fa-balance-scale" aria-hidden="true"></i> <div id="draw0"> draws</div></div>
  
 </header>
 <table id="board">
-  <!-- this a structure -->
   <tr>
-    <td class="cell" id="cell_1" onclick="cell_click('cell_1');">X</td>
-    <td class="cell" id="cell_2" onclick="cell_click('cell_2');">X</td>
-    <td class="cell" id="cell_3" onclick="cell_click('cell_3');">X</td>
+    <td class="cell" id="cell_1" onclick="cell_click('cell_1');"></td>
+    <td class="cell" id="cell_2" onclick="cell_click('cell_2');"></td>
+    <td class="cell" id="cell_3" onclick="cell_click('cell_3');"></td>
   </tr>
   <tr>
-    <td class="cell" id="cell_4" onclick="cell_click('cell_4');">X</td>
-    <td class="cell" id="cell_5" onclick="cell_click('cell_5');">X</td>
-    <td class="cell" id="cell_6" onclick="cell_click('cell_6');">X</td>
+    <td class="cell" id="cell_4" onclick="cell_click('cell_4');"></td>
+    <td class="cell" id="cell_5" onclick="cell_click('cell_5');"></td>
+    <td class="cell" id="cell_6" onclick="cell_click('cell_6');"></td>
     
   </tr>
   <tr>
-    <td class="cell" id="cell_7" onclick="cell_click('cell_7');">X</td>
-    <td class="cell" id="cell_8" onclick="cell_click('cell_8');">X</td>
-    <td class="cell" id="cell_9" onclick="cell_click('cell_9');">X</td>
+    <td class="cell" id="cell_7" onclick="cell_click('cell_7');"></td>
+    <td class="cell" id="cell_8" onclick="cell_click('cell_8');"></td>
+    <td class="cell" id="cell_9" onclick="cell_click('cell_9');"></td>
 
   </tr>
 </table>
- <footer>
+<footer>
 
   <label class="toggleXO">
   <input id="myCheckBox" type="checkbox" onclick="switchxo();">
   <span class="slider"></span>
-      </label>
-     
+  </label>
         <div id="around">
           <button id="butt_reset" onclick="reset(), button();" value="RESET"> <i class="fa fa-refresh " aria-hidden="true"></i> </button>
         </div>
-        
-
-
-      </footer>
-     </div>
-        
-        
+        <h3 id="result"> # result </h3>
+   
+</footer>
+</div>
+      <script src="./script.js"></script>  
     </body>
 </html>
